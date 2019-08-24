@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/obd-web-dashboard/static/css/main.2cce8147.chunk.css",
+    "main.js": "/obd-web-dashboard/static/js/main.d5bc8e81.chunk.js",
+    "main.js.map": "/obd-web-dashboard/static/js/main.d5bc8e81.chunk.js.map",
+    "runtime~main.js": "/obd-web-dashboard/static/js/runtime~main.ea6afab5.js",
+    "runtime~main.js.map": "/obd-web-dashboard/static/js/runtime~main.ea6afab5.js.map",
+    "static/js/2.8342a917.chunk.js": "/obd-web-dashboard/static/js/2.8342a917.chunk.js",
+    "static/js/2.8342a917.chunk.js.map": "/obd-web-dashboard/static/js/2.8342a917.chunk.js.map",
+    "index.html": "/obd-web-dashboard/index.html",
+    "precache-manifest.49a7023701b3e4646ce9017469033fee.js": "/obd-web-dashboard/precache-manifest.49a7023701b3e4646ce9017469033fee.js",
+    "service-worker.js": "/obd-web-dashboard/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/obd-web-dashboard/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/obd-web-dashboard/static/media/logo.5d5d9eef.svg"
+  }
+}
