@@ -8,15 +8,14 @@ import * as OBDReader from "bluetooth-obd";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      error: '',
+    };
   }
 
-  async componentWillMount() {
+  connectDevice = async () => {
     let device;
-
     try {
-      const test = await Bluetooth.getReferringDevice();
-      console.log(test);
       const result = await Bluetooth.requestDeviceAsync();
 
       if (result.type === "cancel") {
@@ -56,25 +55,24 @@ class App extends React.Component {
       // btOBDReader.connect();
     } catch ({ message, code }) {
       console.log("Error:", message, code);
+      this.setState({ error: message});
     }
   }
 
   render() {
+    const { error } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
+          <button
             className="App-link"
-            href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
+            onClick={() => this.connectDevice()}
           >
-            Learn React
-          </a>
+            Connect device
+          </button>
+          {error && (<p>Error: {error}</p>)}
         </header>
       </div>
     );
